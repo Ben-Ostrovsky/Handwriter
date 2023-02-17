@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 
 # Set the path to the folder containing your handwriting images
-path_to_images = '/path/to/your/handwriting/images'
+path_to_images = '/Users/Ben/Desktop/Handwriting'
 
 # Create an empty list to store the images as arrays
 images = []
@@ -28,6 +28,6 @@ for filename in os.listdir(path_to_images):
         
 # Convert the list of images to a NumPy array
 images = np.array(images)
-
+print(images)
 # Save the NumPy array to disk in a format that TensorFlow can read (e.g. HDF5 or TFRecord)
 # You can use TensorFlow's dataset API to load the data during training
